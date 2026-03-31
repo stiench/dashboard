@@ -1,5 +1,5 @@
 
-# Magic mirror config
+# MagicMirror² config
 
 The repo contains the config for Magic Mirror setup
 
