@@ -42,16 +42,64 @@ let config = {
 			module: "alert",
 		},
 		{
-			module: "updatenotification",
-			position: "top_bar"
+			module: "newsfeed",
+			position: "top_bar",
+			config: {
+				feeds: [
+					{
+						title: "RTS",
+						url: "REDACTED_URL"
+					}
+				],
+				showSourceTitle: false,
+				showPublishDate: false,
+				broadcastNewsFeeds: true,
+				broadcastNewsUpdates: true
+			}
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_bar"
+		},
+		{
+			module: 'netatmo',
+			position: 'top_left',
+			header: 'Météo',
+			config: {
+				clientId: 'REDACTED_CLIENT_ID',
+				clientSecret: 'REDACTED_CLIENT_SECRET',
+				refresh_token: 'REDACTED_REFRESH_TOKEN', 
+				showModuleNameOnTop: true,
+				design: "bubbles"
+			}
+		},
+		{
+			module: "MMM-GoogleSheets",
+			header: "Liste courses",
+			position: "top_center",
+			config: {
+				url: "REDACTED_URL",
+				sheet: "Courses",
+				range: "auto",
+				cellStyle: "invert",
+				stylesFromSheet: ["font-size", "text-align", "font-style", "width", "height", "text-decoration"]
+			}
+		},
+		{
+			module: "MMM-GoogleSheets",
+			header: "Menu de la semaine",
+			position: "top_right",
+			config: {
+				url: "REDACTED_URL",
+				sheet: "Menu",
+				range: "A1:C8",
+				cellStyle: "invert",
+				stylesFromSheet: ["font-size", "text-align", "font-style", "width", "height", "text-decoration"]
+			}
 		},
 		{
 			module: "MMM-CalendarExt3",
-			position: "middle_center",
+			position: "bottom_bar",
 			title: "Calendrier",
 			config: {
 				mode: "week",
@@ -82,7 +130,7 @@ let config = {
 			module: "calendar",
 			config: {
         		broadcastPastEvents: true, 
-				calendars: [
+				calendars: [,
 					{
 						symbol: "calendar-check",
 						url: "REDACTED_URL",
@@ -93,38 +141,13 @@ let config = {
 			}	
 		},
 		{
-			module: 'MMM-OpenWeatherMapForecast',
-			header: "Weather",
-			position: "top_right",
-			config: {
-				apikey: '2bb84df4266fb0e52065afd0cd224b3d',
-				latitude: 46.992008,
-				longitude: 6.931944,
-				iconset: "4c",
-				concise: false,
-				forecastLayout: "table",
-				units: "metric",
-				updateInterval: 600000,
-				showCurrentConditions: true,
-				showForecast: true
-			}
+		 	module: "updatenotification",
+			position: "bottom_bar"
 		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "RTS",
-						url: "REDACTED_URL"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
-			}
-		},
+		// {
+		// 	module: "MMM-ModulePosition",
+		// 	position: "fullscreen_below",
+		// },
 	]
 };
 

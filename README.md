@@ -13,5 +13,6 @@ To setup MagicMirror² on Raspberry PI, follow this guide : [https://raspberryti
 | ---- | ---- |
 | Calendar | [https://github.com/MMRIZE/MMM-CalendarExt3](https://github.com/MMRIZE/MMM-CalendarExt3) |
 | Google Sheet | [https://github.com/ryan-d-williams/MMM-GoogleSheets](https://github.com/ryan-d-williams/MMM-GoogleSheets) |
+| Position | [https://github.com/TheBodger/MMM-ModulePosition](https://github.com/TheBodger/MMM-ModulePosition) |
 | Netatmo | [https://github.com/CFenner/MMM-Netatmo](https://github.com/CFenner/MMM-Netatmo) |
 | Wallpaper | [https://github.com/kolbyjack/MMM-Wallpaper](https://github.com/kolbyjack/MMM-Wallpaper) |
