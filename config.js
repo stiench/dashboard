@@ -98,6 +98,19 @@ let config = {
 			}
 		},
 		{
+			module: "weather",
+			position: "top_left",
+			header: "Prévisions",
+			config: {
+				weatherProvider: "openmeteo",
+				type: "forecast",
+				lat: 46.9924,
+				lon: 6.9328,
+				units: "metric",
+				maxNumberOfDays: 5
+			}
+		},
+		{
 			module: "MMM-CalendarExt3",
 			position: "bottom_bar",
 			title: "Calendrier",

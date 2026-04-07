@@ -8,6 +8,7 @@ perl -i -pe "
   s#(\bclientId\s*:\s*)(['\"])[^'\"]*\2#\${1}\${2}REDACTED_CLIENT_ID\${2}#g;
   s#(\bclientSecret\s*:\s*)(['\"])[^'\"]*\2#\${1}\${2}REDACTED_CLIENT_SECRET\${2}#g;
   s#(\brefresh_token\s*:\s*)(['\"])[^'\"]*\2#\${1}\${2}REDACTED_REFRESH_TOKEN\${2}#g;
+  s#(\bapiKey\s*:\s*)(['\"])[^'\"]*\2#\${1}\${2}REDACTED_API_KEY\${2}#g;
 " ./config.js
 
 git add .
