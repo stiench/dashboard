@@ -130,7 +130,7 @@ let config = {
 			module: "calendar",
 			config: {
         		broadcastPastEvents: true, 
-				calendars: [,
+				calendars: [
 					{
 						symbol: "calendar-check",
 						url: "REDACTED_URL",
