@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+cd ~/git/dashboard
 cp ~/git/MagicMirror/config/config.js ./
 
 perl -i -pe "

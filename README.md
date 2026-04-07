@@ -7,6 +7,14 @@ The repo contains the config for Magic Mirror setup
 
 To setup MagicMirror² on Raspberry PI, follow this guide : [https://raspberrytips.com/magic-mirror-guide/](https://raspberrytips.com/magic-mirror-guide/)
 
+## Crontab
+
+```bash
+crontab -e
+0 23 * * * wlr-randr --output HDMI-A-1 --off
+0 6 * * * wlr-randr --output HDMI-A-1 --on
+```
+
 ## Modules
 
 | Name | Link |
