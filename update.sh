@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+cd ~
+pm2 stop mm.sh
+
 cd ~/git/MagicMirror
 git pull
 node --run install-mm
@@ -28,3 +31,7 @@ for dir in ~/git/MagicMirror/modules/*/; do
 		npm --prefix "$dir" install
 	fi
 done
+
+cd ~
+pm2 start mm.sh
+

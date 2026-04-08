@@ -2,6 +2,7 @@
 set -euo pipefail
 
 cd ~/git/dashboard
+git pull
 cp ~/git/MagicMirror/config/config.js ./
 
 perl -i -pe "

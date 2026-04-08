@@ -13,6 +13,7 @@ To setup MagicMirror² on Raspberry PI, follow this guide : [https://raspberryti
 crontab -e
 0 23 * * * wlr-randr --output HDMI-A-1 --off
 0 6 * * * wlr-randr --output HDMI-A-1 --on
+0 2 * * 0 ~/git/dashboard/update.sh
 ```
 
 ## Modules
