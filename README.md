@@ -24,3 +24,7 @@ crontab -e
 | Position | [https://github.com/TheBodger/MMM-ModulePosition](https://github.com/TheBodger/MMM-ModulePosition) |
 | Netatmo | [https://github.com/CFenner/MMM-Netatmo](https://github.com/CFenner/MMM-Netatmo) |
 | Wallpaper | [https://github.com/kolbyjack/MMM-Wallpaper](https://github.com/kolbyjack/MMM-Wallpaper) |
+
+## iCloud Sync
+
+[https://github.com/icloud-photos-downloader/icloud_photos_downloader](https://github.com/icloud-photos-downloader/icloud_photos_downloader)
