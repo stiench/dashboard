@@ -45,8 +45,10 @@ let config = {
 			module: "MMM-Wallpaper",
 			position: "fullscreen_below",
 			config: { // See "Configuration options" for more information.
-				source: "bing",
-				slideInterval: 60 * 1000 // Change slides every minute
+				source: "local:/home/sgerber/icloud-album",
+				slideInterval: 60 * 1000, // Change slides every minute
+				filter: "grayscale(0) brightness(0.5)", // Apply a CSS filter to the images (e.g., grayscale, sepia, blur)
+				size: "contain", // How the image should be sized (cover, contain, auto)
 			}
 		},
 		// {
