@@ -14,6 +14,7 @@ crontab -e
 0 23 * * * wlr-randr --output HDMI-A-1 --off
 0 6 * * * wlr-randr --output HDMI-A-1 --on
 0 2 * * 0 ~/git/dashboard/update.sh
+0 8 * * * ~/git/dashboard/dl-album.sh https://www.icloud.com/sharedalbum/#XXXXXXX ~/icloud-album
 ```
 
 ## Modules

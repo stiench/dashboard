@@ -42,21 +42,29 @@ let config = {
 			module: "alert",
 		},
 		{
-			module: "newsfeed",
-			position: "top_bar",
-			config: {
-				feeds: [
-					{
-						title: "RTS",
-						url: "REDACTED_URL"
-					}
-				],
-				showSourceTitle: false,
-				showPublishDate: false,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
+			module: "MMM-Wallpaper",
+			position: "fullscreen_below",
+			config: { // See "Configuration options" for more information.
+				source: "bing",
+				slideInterval: 60 * 1000 // Change slides every minute
 			}
 		},
+		// {
+		// 	module: "newsfeed",
+		// 	position: "top_bar",
+		// 	config: {
+		// 		feeds: [
+		// 			{
+		// 				title: "RTS",
+		// 				url: "REDACTED_URL"
+		// 			}
+		// 		],
+		// 		showSourceTitle: false,
+		// 		showPublishDate: false,
+		// 		broadcastNewsFeeds: true,
+		// 		broadcastNewsUpdates: true
+		// 	}
+		// },
 		{
 			module: "clock",
 			position: "top_bar"
@@ -153,10 +161,10 @@ let config = {
 				],	
 			}	
 		},
-		{
-		 	module: "updatenotification",
-			position: "bottom_bar"
-		},
+		// {
+		//  	module: "updatenotification",
+		// 	position: "bottom_bar"
+		// },
 		// {
 		// 	module: "MMM-ModulePosition",
 		// 	position: "fullscreen_below",
