@@ -17,6 +17,14 @@ crontab -e
 0 8 * * * ~/git/dashboard/dl-album.sh https://www.icloud.com/sharedalbum/#XXXXXXX ~/icloud-album
 ```
 
+## PM2
+```bash
+pm2 restart mm
+pm2 stop mm
+pm2 start mm.sh
+pm2 logs mm
+``` 
+
 ## Modules
 
 | Name | Link |
